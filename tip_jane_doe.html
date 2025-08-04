@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tip Jane Doe | Tipster</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fafb;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      min-height: 100vh;
+      padding-top: 50px;
+    }
+    .card {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+    }
+    img.profile {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin-bottom: 5px;
+    }
+    .qr-code {
+      margin: 20px 0;
+    }
+    .tip-buttons a {
+      display: block;
+      margin: 10px 0;
+      padding: 12px;
+      background-color: #2563eb;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .tip-buttons a:hover {
+      background-color: #1e4fc5;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://via.placeholder.com/120" alt="Employee Photo" class="profile" />
+    <h2>Jane Doe</h2>
+    <p>Bartender</p>
+    <div class="qr-code">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://your-netlify-site.netlify.app/tip_pages/jane-doe.html&amp;size=150x150" alt="QR Code">
+    </div>
+    <div class="tip-buttons">
+      <a href="https://www.paypal.me/janedoe123" target="_blank">Tip via PayPal</a>
+      <a href="https://venmo.com/janedoe" target="_blank">Tip via Venmo</a>
+      <a href="https://buy.stripe.com/test_xxx" target="_blank">Tip via Card (Stripe)</a>
+    </div>
+  </div>
+</body>
+</html>
